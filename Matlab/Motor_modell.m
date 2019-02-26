@@ -1,0 +1,13 @@
+v=150/3.6; %speed in [m/s]
+k=(0.5334/2); %wheel radius in [m]
+M=300; %torque in [Nm]
+m=2108; %vehicle weight in [kg]
+ro=1.1846; %air density in [kg/m^3]
+cr=0.005+((1/2)*(0.01+0.0095*(v/100)^2));
+cd=0.24; %air resistance factor 
+Af=2.34; %surface in [m^2]
+g=9.81; %gravitational acceleration in [m/s^2]
+slope=0; %in [%]
+alfa=atan(slope/100);
+sampletime=10e-4;
+fl=0.88; %Friction loss in %
